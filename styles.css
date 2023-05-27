@@ -35,3 +35,92 @@ ul{
 a{
     text-decoration: none;
 }
+
+.about{
+    display:flex;
+    justify-content: space-between;
+    max-width:80em;
+    margin:auto;
+    padding: 2em 0;
+}
+
+
+.title_about{
+    font-size: 3.9rem;
+}
+
+.paragraph{
+    margin:3rem 0;
+    font-size: 1.9rem;
+}
+
+.social{
+    display: flex;
+    margin:3rem 0;
+    justify-content: space-between;
+    max-width: 100px;
+}
+
+.social-icon{
+    font-size: 1.9rem;
+}
+.about_img{
+    width: 500px;
+    height: 400px;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: .5rem;
+}
+.projects{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width:80em;
+    margin:auto;
+    padding: 2em 0;
+    
+
+}
+
+.title_projects
+{
+    position: relative;
+    text-align: center;
+}
+h1:after
+{
+    position: absolute;
+    content: '';
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2.8rem;
+    background-color: black;
+
+}
+
+.projects_git{
+    margin-top: 2.8rem;
+}
+.projects_img{
+    margin: 2rem 3rem;
+    width:320px;
+    height: 200px;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 10rem;
+    background-color: rgb(84, 65, 103);
+}
+
+.social-icon{
+    color:black;
+}
