@@ -4,9 +4,10 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+body {
     font-family: "Poppins", sans-serif;
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -21,6 +22,7 @@ html{
 }
 
 .logo{
+    color:rgb(42, 21, 52);
     font-size: 1.2rem;
 }
 
@@ -30,6 +32,7 @@ html{
 }
 
 ul{
+    color:rgb(42, 21, 52);
     list-style-type: none;
 }
 a{
@@ -46,14 +49,18 @@ a{
 
 
 .title_about{
+    color:rgb(42, 21, 52);
     font-size: 3.9rem;
 }
 
 .paragraph{
     margin:3rem 0;
-    font-size: 1.9rem;
+    font-size: 2.9rem;
 }
-
+.paragraph_name{
+    font-size: 2.9rem;
+    color:rgb(95, 22, 131);
+}
 .social{
     display: flex;
     margin:3rem 0;
@@ -64,7 +71,12 @@ a{
 .social-icon{
     font-size: 1.9rem;
 }
+
+.bx bxl-github:hover {
+    color: white;
+}
 .about_img{
+    background: linear-gradient(rgb(112, 112, 142), 10%, pink);
     width: 500px;
     height: 400px;
     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -83,6 +95,7 @@ a{
 
 .title_projects
 {
+    color:rgb(42, 21, 52);
     position: relative;
     text-align: center;
 }
@@ -118,9 +131,59 @@ footer{
     align-items: center;
     font-size: 30px;
     height: 10rem;
-    background-color: rgb(84, 65, 103);
+    background-color: rgb(95, 22, 131)
 }
 
 .social-icon{
     color:black;
+}
+
+@media (max-width: 800px) {
+    .navbar{
+        max-width: 400px;
+    }
+    .about{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 400px;
+    }
+    .left{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .paragraph
+    {
+        text-align: center;
+    }
+    .title_about{
+        font-size: 1.9rem;
+    }
+    .paragraph{
+        font-size: 1.9rem;
+    }
+    .paragraph_name{
+        font-size: 1.9rem;
+    }
+    
+    .about_img{
+        width:250px;
+        height: 250px;
+    }
+    .projects{
+        max-width: 400px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects_git{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
